@@ -55,3 +55,11 @@ $ bash 5_import_new_company_devices new_devices.csv MAC_OS<br>
 2026-05-29T15:32:08.307+02:00,0,Processing item 25/25<br>
 Company Device: /devices/???, deviceType: MAC_OS, serialNumber: 123456789, assetTag: Testing Only, Create Failed: Requested entity already exists<br>
 Company Device: devices/CiQ4YTYwZDliMC1mNWIwLTQyMmItYTg1ZC1iNzlhZmZkNTEwNjI%3D, deviceType: MAC_OS, serialNumber: ABC98765, assetTag: Testing Only, Created<br>
+
+# NOTE - THIS MAY NOT WORK FOR EVERYONE!
+## Here's what the API documentation says for devices.create
+https://docs.cloud.google.com/identity/docs/reference/rest/v1/devices/create
+
+Method: devices.create<br>
+Creates a device. Only company-owned device may be created.<br>
+Note: This method is available only to customers who have one of the following SKUs: Enterprise Standard, Enterprise Plus, Enterprise for Education, and Cloud Identity Premium
